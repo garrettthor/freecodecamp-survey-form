@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Dream Burrito</h1>
+    <p id="description">Tell us all about your burrito preferences!</p>
+
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name">
+        </div>
+        
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email">
+        </div>
+        
+        <div>
+            <label id="number-label" for="number">How many burritos do you eat in a week? (optional)</label>
+            <input type="number" name="number" id="number" min="0" max="99" placeholder="How many burritos?">
+        </div>
+        
+        <div>
+            <label for="type">What is your favorite type of burrito?</label>
+            <select id="dropdown" name="type">
+                <option value="Bean and Cheese" selected>Bean and Cheese</option>
+                <option value="Carne Asada">Carne Asada</option>
+                <option value="Pollo Asado">Pollo Asado</option>
+                <option value="Carnitas">Carnitas</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+                <option value="Chimichanga">Chimichanga</option>
+                <option value="Shrimp">Shrimp</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        
+        <div class="radio-div">
+            <label for="meal">Which meal do you typically eat a burrito for?</label>
+            <input type="radio" name="meal" value="breakfast" checked> Breakfast
+            <input type="radio" name="meal" value="lunch"> Lunch
+            <input type="radio" name="meal" value="dinner"> Dinner
+            <input type="radio" name="meal" value="other"> Other/Snack/Can't stop won't stop
+        </div>
+        
+        <div>
+            <label for="ruin">What ingredients/preparation style ruin a burrito experience for you?</label>
+        </div>
+        
+
+
+    </form>
+    
+</body>
+</html>
