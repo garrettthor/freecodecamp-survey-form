@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+
     <title>Survey Form</title>
 </head>
 <body>
@@ -14,38 +18,48 @@
     <p id="description">Tell us all about your burrito preferences!</p>
 
     <form id="survey-form">
-        <div>
+        <div class="form-chunk">
             <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Your name">
+            <div>
+                <input type="text" name="name" id="name" placeholder="Your name">
+            </div>
         </div>
         
-        <div>
+        <div class="form-chunk">
             <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email">
+            <div>
+                <input type="email" name="email" id="email" placeholder="Your email">
+            </div>
+            
         </div>
         
-        <div>
+        <div class="form-chunk">
             <label id="number-label" for="number">How many burritos do you eat in a week? (optional)</label>
-            <input type="number" name="number" id="number" min="0" max="99" placeholder="How many burritos?">
+            <div>
+                <input type="number" name="number" id="number" min="0" max="99" placeholder="How many burritos?">
+            </div>
         </div>
         
-        <div>
+        <div class="form-chunk">
             <label for="type">What is your favorite type of burrito?</label>
-            <select id="dropdown" name="type">
-                <option value="Bean and Cheese" selected>Bean and Cheese</option>
-                <option value="Carne Asada">Carne Asada</option>
-                <option value="Pollo Asado">Pollo Asado</option>
-                <option value="Carnitas">Carnitas</option>
-                <option value="California">California</option>
-                <option value="Texas">Texas</option>
-                <option value="Chimichanga">Chimichanga</option>
-                <option value="Shrimp">Shrimp</option>
-                <option value="Breakfast">Breakfast</option>
-                <option value="Other">Other</option>
-            </select>
+            <div>
+                <select id="dropdown" name="type">
+                    <option value="Bean and Cheese" selected>Bean and Cheese</option>
+                    <option value="Carne Asada">Carne Asada</option>
+                    <option value="Pollo Asado">Pollo Asado</option>
+                    <option value="Carnitas">Carnitas</option>
+                    <option value="California">California</option>
+                    <option value="Texas">Texas</option>
+                    <option value="Chimichanga">Chimichanga</option>
+                    <option value="Shrimp">Shrimp</option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            
         </div>
         
-        <div class="radio-div">
+        <div class="radio-div form-chunk">
             <label for="meal">Which meal do you typically eat a burrito for?</label>
             <div>
                 <input type="radio" name="meal" value="breakfast" checked> Breakfast
@@ -62,16 +76,26 @@
             
         </div>
         
-        <div>
-
-            <label for="ruin">What ingredients/preparation style ruin a burrito experience for you?</label>
+        <div class="checkbox-div form-chunk">
+            <label for="ruin">What ruins a burrito experience for you? (Select all that apply)</label>
             <div>
-                <input type="checkbox" name="rice" value="rice"> Rice
-                <input type="checkbox" name="tinfoil" value="tinfoil"> Tin foil
+                <input type="checkbox" name="ruin" value="rice"> Rice
+            </div>
+
+            <div>
+                <input type="checkbox" name="ruin" value="tinfoil"> Tin foil
+            </div>
+
+            <div>
+                <input type="checkbox" name="ruin" value="bad-tortilla"> Bad tortilla
             </div>
         </div>
         
+        <div>
+            <textarea>Tell us more about your perfect burrito...</textarea>
+        </div>
 
+        <button id="submit" class="form-chunk">Submit</button>
 
     </form>
     

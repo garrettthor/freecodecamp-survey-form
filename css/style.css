@@ -2,4 +2,73 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+#description {
+    font-size: 1.25rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+input {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+}
+
+#name,
+#email {
+    width: 44rem;
+}
+
+#number {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+select {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+textarea {
+    margin-left: 1rem;
+    width: 44rem;
+    height: 5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+    background-color: indianred;
+    border-radius: 3px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#submit {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-chunk {
+    margin-bottom: 1rem;
 }
